@@ -13,29 +13,6 @@ getID(api)
 .then((response)=>{
   getName(response)
 })
-// const chooseEl = document.querySelector('.country');
-// const selectEl = document.querySelector('#country__list');
-// const form = document.getElementById('form');
-// const countryList = document.getElementById('country__lists')
-
-// Add select parts
-// chooseEl.addEventListener("click", ()=>{
-//   selectEl.classList.toggle('hidden')
-// })
-
-// form.addEventListener('submit',(e)=>{
-//   e.preventDefault()
-//   const inputVal = form.search.value.trim();
-//   const names = document.querySelectorAll('.country_item');
-//   names.forEach((name)=>{
-//     if(name.lastElementChild.firstElementChild.textContent.toLowerCase().includes(inputVal)){
-//       name.classList.remove('hidden')
-//     }else{
-//       name.classList.add('hidden')
-//     }
-//   })
-//   form.reset()
-// })
 function getName(data){
   data.forEach(item =>{
     console.log(item);
