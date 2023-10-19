@@ -11,6 +11,14 @@ chooseEl.addEventListener("click", ()=>{
 form.addEventListener('submit',(e)=>{
   e.preventDefault()
   const inputVal = form.search.value.trim();
+  const names = document.querySelectorAll('.country_item');
+  names.forEach((name)=>{
+    if(name.lastElementChild.firstElementChild.textContent.toLowerCase().includes(inputVal)){
+      name.classList.remove('hidden')
+    }else{
+      name.classList.add('hidden')
+    }
+  })
   form.reset()
 })
 
@@ -24,6 +32,7 @@ form.addEventListener('submit',(e)=>{
             <p>Population: ${item.population}</p>
             <p>Region: ${item.region}</p>
             <p>Capital: ${item.capital}</p>
+            <a href="../about.html">Learn More</a>
           </div>
         </li>
     `
