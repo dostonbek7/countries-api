@@ -2,7 +2,7 @@ const queryString = window.location.search;
 const id = new URLSearchParams(queryString).get('id')
 const countryCatalog = document.querySelector('.country__catalog')
 
-const api = `https://countries-api-v7sn.onrender.com/countries?limit=250${id}`
+const api = `https://countries-api-v7sn.onrender.com/countries?${id}`
 
 const getID = async (resourse) =>{
   const request = await fetch(resourse)

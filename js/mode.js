@@ -2,7 +2,6 @@ const body = document.querySelector("body")
 const darkMode = document.querySelector("#dark-icon");
 const lightMode = document.querySelector("#light-icon");
 const bottomBtn = document.querySelector('#bottom-btn');
-const overlay = document.querySelector('#overlay');
 
 const modeLocal = localStorage.getItem('mode');
 if(modeLocal){
